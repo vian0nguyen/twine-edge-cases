@@ -1,0 +1,60 @@
+/*import custom fonts from google fonts*/
+@import url('https://fonts.googleapis.com/css?family=Merriweather:700|Roboto:300');
+
+tw-story{
+  background-color:#F4E8E6;
+  color: #000;
+  font-family: 'Roboto', sans-serif;
+  font-size: 22px;
+}
+
+tw-passage{ /*gives a healthy margin from above*/
+  border-left:0px;
+  margin: 0;
+  padding: 15% 0;
+  line-height: 1.23em;
+}
+
+tw-sidebar {/*gets rid of display arrows, no going back or forward*/
+  display:none;
+}
+
+/*how do! change of color to link-reveal or click links??
+enchantments!! are hooks, click:, reveal, etc*/
+tw-link.visited,tw-link,tw-enchantment.link{
+  color:#404257;
+}
+/*make link colors the same as visited links so players won't know if they've been down a path or not */
+tw-link.visited:hover,tw-link:hover,enchantment-link:hover{
+  color:#777A8F;
+}
+
+tw-story[tags~="start"]{
+  font-size: 23px;
+}
+
+tw-story[tags~="give"]{
+  background-color: #A1CFD1; 
+    color: #F4E8E6
+}
+
+tw-link[tags~="give"]{
+  color: #C5EBC3;
+}
+
+tw-story[tags~="take"]{
+  background-color: #D282A6; 
+    color: #F4E8E6
+}
+
+tw-link[tags~="take"]{
+  color: #E8B4BC;
+}
+
+tw-story[tags~="awk"]{
+  background-color: #E4DFDA;
+}
+
+tw-story[tags~="good"]{
+  background-color: #FFEDCE;
+}
