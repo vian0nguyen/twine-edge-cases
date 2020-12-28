@@ -9,3 +9,4 @@ content to display
 
 3. Go to all passages you want to exclude the special passage from
   `<<set $clear = true>>`
+4. Don't forget in the "next" passage to set this variable back to `false`
