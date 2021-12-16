@@ -1,0 +1,165 @@
+//for harlowE!
+
+http://www.adamhammond.com/twineguide/ <-helpful concepts
+
+//for image or article citations
+(link-reveal: "www.truluv.ai")[(open-url:  "http://truluv.ai/selfcare/")]
+
+//set variable after selecting/clicking a path lol, jank but it works lololol
+(if: $routes is 0)[[[ok, seriously, stop vibrating. what are you most excited about? -> excited]](click:"ok, seriously, stop vibrating. what are you most excited about")[(set: $routes to +1 )]]
+
+//YOU CAN! add to a variable everytime you visit a page
+//just knoW! It'll start the variable at 1 NOT 0
+(set: $give to $give+1)		//this is she
+
+//EXAMPLE Stylesheet !!https://twinery.org/wiki/stylesheet!!
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Raleway|Nunito');	//how to import fonts
+
+
+tw-story{
+  background-color:#A1E2EA;	//general story color and look
+  font-family: 'Nunito', sans-serif;
+  font-size: 28px;
+  color: #FFFFFF
+}
+
+tw-story[tags~= "start"]{	//only applies to certain page w/tags
+  background-color: #F9AAA3;
+  font-size: 40px;
+}
+
+tw-link{			//changes link color
+  color:darkblue;
+
+}
+
+tw-link:hover{			//changes mouse over link color
+  color:orange
+}
+
+
+
+{(live: .7s)[so please cut it out!
+
+[[that's it.->end]]]}]
+
+----------------------------------------------------------------------------------------------
+EXAMPLE STYLESHEET:
+@import url('https://fonts.googleapis.com/css?family=EB+Garamond');
+
+/* Custom styles -- see custom styles passage */
+
+.loud {
+  color: red;
+  font-size: 125%;
+}
+
+/* Overall styles */
+
+body {
+  font-family: "EB Garamond", Georgia, serif;
+  background-color: #FFFCF1;
+  color: #807653;
+}
+
+a {
+  color: black;
+}
+
+a:hover {
+  color: #868AB3;
+}
+
+/* Passage text */
+
+.passage {
+  font-size: 24px; 
+}
+
+/* Sidebar */
+
+#ui-bar {
+  background-color: #706D5F;
+  border-right-color: #706D5F;
+}
+
+/* Toggle button for sidebar */
+
+#ui-bar-toggle {
+  color: #A19A84;
+  background-color: transparent;
+  border-color: #504d43;
+}
+
+#ui-bar-toggle:hover {
+  color: white;
+  background-color: transparent;
+}
+
+/* Back/forward buttons in sidebar (disabled) */
+
+#ui-bar-history [id|="history"]:disabled {
+  color: #817b67;
+  border-color: transparent;
+}
+
+/* Back/forward buttons in sidebar (enabled) */
+
+#ui-bar-history [id|="history"] {
+  color: #A19A84;
+  border-color: #504d43;
+}
+
+/* Back/forward buttons in sidebar (hovered) */
+
+#ui-bar-history [id|="history"]:hover {
+  color: white;
+  background-color: transparent;
+}
+
+/* Story title in sidebar */
+
+#story-title {
+  color: #B5AF9A;
+}
+
+/* Border around Saves, Restart, and other sidebar buttons */
+
+#menu ul, #menu li:not(:first-child) {
+  border-color: #504d43;
+}
+
+/* Saves, Restart, and other sidebar buttons */
+
+#menu li a {
+  color: #B5AF9A;
+}
+
+#menu li a:hover {
+  color: white;
+  background-color: transparent;
+}
+
+/* Title bar for Restart prompt and other dialog boxes */
+
+#ui-dialog-titlebar {
+  background-color: gray;
+  color: black;
+  font-size: 10px;
+}
+
+/* Main body for Restart prompt and other dialog boxes */
+
+#ui-dialog-body {
+  background-color: black;
+  color: gray;
+}
+
+/* Buttons in Restart prompt and other dialog boxes */
+
+#ui-dialog-body button {
+  background-color: gray;
+  color: black;
+  border-color: gray;
+}
